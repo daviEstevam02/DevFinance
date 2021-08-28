@@ -23,27 +23,27 @@
                     <span>Entradas</span>
                     <img src="./assets/income.svg" alt="Entradas">
                 </h3>
-                <p>5.000,00</p>
+                <p id="income">5.000,00</p>
             </div>
             <div class="card">
                 <h3>
                     <span>Saídas</span>
                     <img src="./assets/expense.svg" alt="Entradas">
                 </h3>
-                <p>2.000,00</p>
+                <p id="expense">2.000,00</p>
             </div>
             <div class="card green">
                 <h3>
                     <span>Total</span>
                     <img src="./assets/total.svg" alt="Entradas">
                 </h3>
-                <p>3.000,00</p>
+                <p id="total">3.000,00</p>
             </div>
         </section>
         <section id="transaction">
 
             <a
-                onclick="Modal.open()" 
+                onclick="Modal.changeModalState()" 
                 href="#" 
                 class="button new"
             >
@@ -60,30 +60,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expense">-500,00</td>
-                        <td class="date">12/04/21</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Site web</td>
-                        <td class="income">5000,00</td>
-                        <td class="date">12/04/21</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">-200,00</td>
-                        <td class="date">12/04/21</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="">
-                        </td>
-                    </tr>
+                   
                 </tbody>
             </table>
         </section>
@@ -128,7 +105,7 @@
 
             <div class="modal-buttons">
                 <a 
-                    onclick="Modal.close()"
+                    onclick="Modal.changeModalState()"
                     href="#" 
                     class="button cancel"
                 >
