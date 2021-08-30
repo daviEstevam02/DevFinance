@@ -39,7 +39,9 @@ a:hover{
     display: inline-block;
     margin-bottom: 0.8rem;
 }
-
+.button.new:hover{
+    cursor: pointer;
+}
 /*========== HEADER =============*/
 header{
     background: #2D4A22;
@@ -225,7 +227,7 @@ table tbody td:last-child{
     margin-top: 1rem;
 }
 
-.modal-buttons button{
+.save-button{
     width: 48%;
 
     padding: 1rem;
@@ -234,7 +236,7 @@ table tbody td:last-child{
     color: #f0f2f5;
     background: #49AA26;
 }
-.modal-buttons button:hover{
+.save-button:hover{
     cursor: pointer;
 
     background: #2a9b01;
@@ -256,6 +258,8 @@ table tbody td:last-child{
 .button.cancel:hover{
     background: #e92929;
     color: #fff;
+
+    cursor:pointer;
 
     transition: 0.3s;
 }
